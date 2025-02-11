@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name - Portfolio</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header & Navigation -->
-  <header>
-    <nav>
-      <div class="container nav-container">
-        <h1 class="logo">Your Name</h1>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#passion">Passion</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Main Content -->
-  <main id="home">
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <h2>Welcome to My Portfolio</h2>
-        <p>
-          Hello! I’m <strong>Your Name</strong>, a dedicated Machine Learning Engineer with a passion for innovative solutions.
-          Explore my background, projects, and resume below.
-        </p>
-      </div>
+        <img src="your-profile-picture.jpg" alt="Your Name">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I’m <strong>Your Name</strong>, a dedicated <strong>Machine Learning Engineer</strong> passionate about creating innovative solutions. Explore my background, projects, and resume below.</p>
+            <a href="resume.pdf" class="button">View My Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Master's student specializing in <strong>Computer Security and Machine Learning</strong>. With a strong background in AI and cybersecurity, I am dedicated to developing impactful solutions.</p>
     </section>
 
     <!-- Education Section -->
     <section id="education">
-      <div class="container">
         <h2>Education</h2>
-        <p>
-          [Provide your education details here, such as your Master's program, institution, and any relevant courses or achievements.]
-        </p>
-      </div>
-    </section>
-
-    <!-- Passion Section -->
-    <section id="passion">
-      <div class="container">
-        <h2>Passion</h2>
-        <p>
-          [Talk about what drives you, whether it’s solving complex problems in machine learning or exploring the latest trends in cybersecurity.]
-        </p>
-      </div>
+        <p><strong>George Washington University</strong> – MS in Project Management (Ongoing)</p>
+        <p><strong>George Washington University</strong> – Computer Science (Security & ML Focus)</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <div class="container">
         <h2>Projects</h2>
-        <p>
-          Check out my projects on 
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>.
-        </p>
-      </div>
+        <p>Explore my latest AI, ML, and cybersecurity projects.</p>
+        <ul>
+            <li><a href="https://github.com/yourgithub/project1">Project 1</a> - Fine-tuning GPT for product categorization</li>
+            <li><a href="https://github.com/yourgithub/project2">Project 2</a> - Secure authentication system</li>
+            <li><a href="https://github.com/yourgithub/project3">Project 3</a> - AI-driven threat detection</li>
+        </ul>
     </section>
 
     <!-- Resume Section -->
     <section id="resume">
-      <div class="container">
         <h2>Resume</h2>
-        <p>
-          You can download my resume 
-          <a href="resume.pdf" target="_blank">here</a>.
-        </p>
-      </div>
+        <p>Download my resume to learn more about my experience and skills.</p>
+        <a href="resume.pdf" class="button">Download Resume</a>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a></p>
+    </section>
 
-  <!-- External JavaScript -->
-  <script src="scripts.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
