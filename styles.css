@@ -5,6 +5,14 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #1E2A38, #2C3E50);
   color: #E0E0E0;
+  line-height: 1.6;
+}
+
+/* Container for content width control */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navigation */
@@ -12,17 +20,32 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(30, 42, 56, 0.9);
+  background: rgba(30, 42, 56, 0.95);
   padding: 15px 0;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F4A261;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-links li {
@@ -35,38 +58,138 @@ header {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
+  position: relative;
 }
 
 .nav-links a:hover {
   color: #E76F51;
 }
 
-/* Hero Section */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #E76F51;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section with Background Image */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  text-align: left;
-  padding: 100px 5%;
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('file\image_1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.3) blur(2px);
+  z-index: -1;
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 800px;
+  animation: fadeIn 1s ease-in;
+  position: relative;
+  z-index: 1;
+  background: rgba(30, 42, 56, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.hero h2 {
-  font-size: 3rem;
-  font-weight: 700;
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero::before {
+    background-position: center center;
+  }
+  
+  .hero-content {
+    max-width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 25px;
+  }
+  
+}
+
+/* Section Styling */
+section {
+  padding: 80px 0;
+}
+
+section .container {
+  background: rgba(30, 42, 56, 0.7);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2.5rem;
   color: #F4A261;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #E0E0E0;
-  line-height: 1.6;
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  background-color: #E76F51;
+}
+
+p {
   margin-bottom: 20px;
+  max-width: 800px;
+}
+
+/* List Styling */
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+
+ul li::before {
+  content: "•";
+  color: #F4A261;
+  position: absolute;
+  left: -10px;
+  font-weight: bold;
 }
 
 /* Button Styling */
@@ -74,46 +197,108 @@ header {
   display: inline-block;
   background: #E76F51;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 25px;
   text-decoration: none;
   font-size: 1.1rem;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
   background: #F4A261;
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Styling */
-section {
-  padding: 80px 5%;
-}
-
-h2 {
-  font-size: 2.5rem;
+/* Link Styling */
+a {
   color: #F4A261;
-  margin-bottom: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #E76F51;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: #1E2A38;
+  padding: 25px 0;
+  background: #1A232E;
   color: #E0E0E0;
   font-size: 0.9rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .hero {
-      flex-direction: column;
-      text-align: center;
+    padding: 140px 20px 80px;
+    text-align: center;
   }
-
+  
   .hero-content {
-      max-width: 80%;
+    max-width: 100%;
+  }
+  
+  h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+  
+  section .container {
+    padding: 30px 20px;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links li {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    margin: 5px 8px;
   }
 }
