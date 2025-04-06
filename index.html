@@ -6,16 +6,8 @@
     <title>Sylvester Ampomah | ML Engineer & Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TK97GYGZN8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TK97GYGZN8');
-</script>
 <body>
 
     <!-- Navigation -->
@@ -34,17 +26,27 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div id="particles-js"></div>
         <div class="container">
             <div class="hero-content">
-                <h2>Welcome to Sylvester's Portfolio</h2>
-                <p>Hello! I'm <strong>Sylvester</strong>, MSc. CS student at The George Washington University and an aspiring <strong>Machine Learning Engineer/Scientist</strong>. I enjoy experimenting with Machine Learning algorithms to generalize on datasets, and I'm passionate about building software to interface with ML models.</p>
-                <a href="files\Sylvester Ampomah_machine_learning_scientist_engin_ver3.pdf" class="button">View My Resume</a>
+                <div class="hero-text">
+                    <h1 class="typing-text">Welcome to Sylvester's Portfolio</h1>
+                    <p class="fade-in-text">Hello! I'm <strong>Sylvester</strong>, MSc. CS student at The George Washington University and an aspiring <strong>Machine Learning Engineer/Scientist</strong>. I enjoy experimenting with Machine Learning algorithms to generalize on datasets, and I'm passionate about building software to interface with ML models.</p>
+                    <div class="hero-buttons">
+                        <a href="files\Sylvester Ampomah_machine_learning_scientist_engin_ver3.pdf" class="button primary-button">View My Resume</a>
+                        <a href="#contact" class="button secondary-button">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-image">
+                        <img src="files\formal picture suit_cut_copy.jpg" alt="Sylvester Ampomah" class="profile-image">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about">
+     <!-- About Section -->
+     <section id="about">
         <div class="container">
             <h2>About Me</h2>
             <p>I am a Master's student specializing in <strong>Machine Intelligence</strong>. I enjoy building models that generalize well on a given dataset, which means I spend significant time designing experiments and learning about machine learning algorithms and their hyperparameters, understanding the math and logic behind them.</p>
@@ -58,6 +60,147 @@
             </ul>
         </div>
     </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Software Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Projects Section -->
+    <section id="ongoing-projects">
+        <div class="container">
+            <h2>Ongoing Projects</h2>
+            <p class="section-intro">Here are some of the exciting machine learning and software projects I'm currently working on:</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image gradient-bg bg-neural">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Graph Neural Networks</h3>
+                        <p>Building a Graph Neural Network that predicts possible links between nodes in a graph using the NASA GES DISC dataset.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sylvester107/-Link-Prediction-with-NASA-GES-DISC-Dataset-" target="_blank" class="project-link">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image gradient-bg bg-nlp">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Eat Good: Your AI Powered Smart Eating Assistant</h3>
+                        <p>Building a Web application that uses NLP API's to analyze the content of processed food products and give nutritional information and recommendations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sylvester107/EAT-GOOD-Your-AI-Powered-Smart-Eating-Assistant" target="_blank" class="project-link">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image gradient-bg bg-rl">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>A Reinforcement Learning Agent for Recommendation System loading...</h3>
+                        <p>More details coming soon.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/sylvester107/rl-cloud" target="_blank" class="project-link">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image gradient-bg bg-vis">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Few-Shot Learning for Effective Categorization and recommendation of low-frequency Products</h3>
+                        <p>This project is a part of my research on few-shot learning for effective categorization and recommendation of low-frequency products, which has been accepted for publication in the HCII 2025 conference.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sylvester107/Few-Shot-Learning-for-Effective-Categorization-and-Recommendation-of-Low-Frequency-Products" target="_blank" class="project-link">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="projects-note">More projects coming soon! Check my <a href="https://github.com/sylvester107" target="_blank">GitHub</a> for the latest updates.</p>
+        </div>
+    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+        <h2>Past Projects</h2>
+        <p>I will share most of the projects I was really excited about soon. For now, you can check my GitHub.</p>
+        <p>GitHub: <a href="https://github.com/sylvester107" target="_blank">github.com/sylvester107</a></p>
+    </div>
+</section>
+   
 
     <!-- Education Section -->
     <section id="education">
@@ -68,14 +211,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>I will share most of the projects I was really excited about soon. For now, you can check my GitHub.</p>
-            <p>GitHub: <a href="https://github.com/sylvester107" target="_blank">github.com/sylvester107</a></p>
-        </div>
-    </section>
+  
 
     <!-- Resume Section -->
     <section id="resume">
